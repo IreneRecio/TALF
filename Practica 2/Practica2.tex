@@ -59,26 +59,26 @@ Automata diseñado con JFLAP
 \begin{flushleft}
 Creo el autómata en el archivo finiteautomata.json:
 
-\{
-    "name" : "a",
-    
-    "representation" : \{
-    
-      "K" : ["q0", "q1", "q2"],
-      
-      "A" : ["a", "b"],
-      
-      "s" : "q0",
-      
-      "F" : ["q1"],
-      
-      "t" : [["q0", "a", "q1"],["q0", "b", "q2"],["q1", "a", "q2"], 		["q1", "b", "q2"],["q2", "a", "q2"],["q2", "b", "q2"]]
-             
-       \}
-      
-\}
+
 
 \end{flushleft}
+\begin{verbatim}
+{
+    "name" : "a",
+    "representation" : {
+      "K" : ["q0", "q1", "q2"],
+      "A" : ["a", "b"],
+      "s" : "q0",
+      "F" : ["q1"],
+      "t" : [["q0", "a", "q1"],
+             ["q0", "b", "q2"],
+             ["q1", "a", "q2"],
+             ["q1", "b", "q2"],
+             ["q2", "a", "q2"],
+             ["q2", "b", "q2"]]
+      }
+  }
+\end{verbatim}
 
 \begin{flushleft}
 Al ejecutarlo en Octave siguiendo este modelo de automata con la siguiente instrucción:
